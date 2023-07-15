@@ -1,7 +1,7 @@
 import React from "react"
 
 function Primeiro(){
-    const msg = 'Hello World'
+    const msg = 'Hello World!'
     return (
         <div>
             <h1>Primeiro componente</h1>
