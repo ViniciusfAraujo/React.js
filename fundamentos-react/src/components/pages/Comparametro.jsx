@@ -1,6 +1,6 @@
 import React from "react"
 
-function Comparametro(props){ //props => parametro
+function ComParametro(props){ //props => parametro
     //console.log(props);
     const status = props.nota >= 7 ? 'Aprovado' : 'Recuperação'
     const intNota = Math.ceil(props.nota)
@@ -12,4 +12,4 @@ function Comparametro(props){ //props => parametro
         </div>
     )
 }
-export default Comparametro
+export default ComParametro
