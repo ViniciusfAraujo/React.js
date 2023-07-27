@@ -9,6 +9,8 @@ import Aleatorio from "./pages/Aleatorio";
 import Card from "./layout/Card";
 import Familia from './pages/Familia';
 import FamiliaMembro from './pages/FamiliaMembro';
+import ListaAluno from './repetição/ListaAlunos';
+import TabelasProdutos from './repetição/TabelasProdutos';
 
 function App(props){
     return(
@@ -16,6 +18,12 @@ function App(props){
             <h1>Fundamentos React.js</h1>
             
             <div className="cards" >
+                <Card titulo='#07 - Tabela de produtos' color='#040F0F'>
+                    <TabelasProdutos/>
+                </Card>
+                <Card titulo='#06 - Repetição' color='#0081A7'>
+                    <ListaAluno/>
+                </Card>
                 <Card titulo='#05 - Componentes com Filhos' color='#FFD700'>
                     <Familia sobrenome='Araujo'>
                         <FamiliaMembro nome='Vinicius'/>
