@@ -1,5 +1,5 @@
 import React from "react";
-import If from "./If";
+import If from "../If";
 
 function UsuarioInfo(props){
     const usuario = props.usuario || {}

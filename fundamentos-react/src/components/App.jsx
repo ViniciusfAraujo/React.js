@@ -22,7 +22,6 @@ function App(props){
             <div className="cards" >
                 <Card titulo='#08 - Renderização Condicional' color='#579936'>
                     <ParOuImpar numero={21}/>
-                    <UsuarioInfo usuario={{nome: 'Vinicius'}}/>
                 </Card>
                 <Card titulo='#07 - Tabela de produtos' color='#040F0F'>
                     <TabelasProdutos/>
