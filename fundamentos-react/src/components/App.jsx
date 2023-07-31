@@ -11,6 +11,8 @@ import Familia from './pages/Familia';
 import FamiliaMembro from './pages/FamiliaMembro';
 import ListaAluno from './repetição/ListaAlunos';
 import TabelasProdutos from './repetição/TabelasProdutos';
+import ParOuImpar from './condicional/ParOuImpar';
+import UsuarioInfo from './condicional/UsuarioInfo';
 
 function App(props){
     return(
@@ -18,6 +20,10 @@ function App(props){
             <h1>Fundamentos React.js</h1>
             
             <div className="cards" >
+                <Card titulo='#08 - Renderização Condicional' color='#579936'>
+                    <ParOuImpar numero={21}/>
+                    <UsuarioInfo usuario={{nome: 'Vinicius'}}/>
+                </Card>
                 <Card titulo='#07 - Tabela de produtos' color='#040F0F'>
                     <TabelasProdutos/>
                 </Card>
