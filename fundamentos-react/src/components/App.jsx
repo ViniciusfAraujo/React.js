@@ -12,7 +12,9 @@ import FamiliaMembro from './pages/FamiliaMembro';
 import ListaAluno from './repetição/ListaAlunos';
 import TabelasProdutos from './repetição/TabelasProdutos';
 import ParOuImpar from './condicional/ParOuImpar';
-import UsuarioInfo from './condicional/UsuarioInfo';
+import DiretaPai from './comunicação/DiretaPai';
+import IndiretaPai from './comunicação/IndiretaPai';
+
 
 function App(props){
     return(
@@ -20,9 +22,14 @@ function App(props){
             <h1>Fundamentos React.js</h1>
             
             <div className="cards" >
+                <Card titulo='#10 - Comunicação Indireta'       color='#E61105'>
+                    <IndiretaPai/>
+                </Card>
+                <Card titulo='#09 - Comunicação Direta'       color='#59382C'>
+                    <DiretaPai/>
+                </Card>
                 <Card titulo='#08 - Renderização Condicional' color='#579936'>
                     <ParOuImpar numero={21}/>
-                    <UsuarioInfo/>
                 </Card>
                 <Card titulo='#07 - Tabela de produtos' color='#040F0F'>
                     <TabelasProdutos/>
