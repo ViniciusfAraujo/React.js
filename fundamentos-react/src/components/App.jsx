@@ -14,6 +14,7 @@ import TabelasProdutos from './repetição/TabelasProdutos';
 import ParOuImpar from './condicional/ParOuImpar';
 import DiretaPai from './comunicação/DiretaPai';
 import IndiretaPai from './comunicação/IndiretaPai';
+import Input from './formulario/Input';
 
 
 function App(props){
@@ -22,6 +23,9 @@ function App(props){
             <h1>Fundamentos React.js</h1>
             
             <div className="cards" >
+                <Card titulo='#10 - Componente controlado' color='#BF665E'>
+                    <Input/>
+                </Card>
                 <Card titulo='#10 - Comunicação Indireta'       color='#E61105'>
                     <IndiretaPai/>
                 </Card>
