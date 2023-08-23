@@ -16,6 +16,7 @@ import DiretaPai from './comunicação/DiretaPai';
 import IndiretaPai from './comunicação/IndiretaPai';
 import Input from './formulario/Input';
 import Contador from './contador/Contador';
+import Mega from './mega/Mega';
 
 
 function App(props){
@@ -24,6 +25,9 @@ function App(props){
             <h1>Fundamentos React.js</h1>
             
             <div className="cards" >
+                <Card titulo='#12 - Mega' color='#B312AD'>
+                   <Mega qtde={8}/>
+                </Card> 
                 <Card titulo='#11 - Contador' color='#606c38'>
                     <Contador numeroInicial={0}/>
                 </Card>    
