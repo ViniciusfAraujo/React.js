@@ -11,6 +11,7 @@ function calcFatorial(n){
 const UseEffect = (props) => {
     const [number, setNumber] = useState(1)
     const [fatorial, setFatorial] = useState(1)
+    const [count, setCount] = useState(0)
 
     useEffect(function(){
         setFatorial(calcFatorial(number))
@@ -21,6 +22,12 @@ const UseEffect = (props) => {
             document.title = 'Eita...'
         }
     }, [fatorial])
+
+    useEffect(function(){
+        setTimeout(() => {
+            setCount((count) => count + 1)
+        }, 1000)
+    }, [])
 
 
     return (
@@ -42,7 +49,7 @@ const UseEffect = (props) => {
 
             <SectionTitle title="Exercício #02"/>
             <div className="center">
-                
+                <h1>I've rendered {count} times!</h1>
             </div>
         </div>
     )
