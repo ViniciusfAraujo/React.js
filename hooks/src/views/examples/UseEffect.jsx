@@ -13,6 +13,7 @@ const UseEffect = (props) => {
     const [fatorial, setFatorial] = useState(1)
     const [count, setCount] = useState(0)
 
+    //EX01
     useEffect(function(){
         setFatorial(calcFatorial(number))
     },[number])
@@ -23,11 +24,19 @@ const UseEffect = (props) => {
         }
     }, [fatorial])
 
+    //EX03
     useEffect(function(){
         setTimeout(() => {
             setCount((count) => count + 1)
         }, 1000)
     }, [])
+
+    //EX02
+    const [status, setStatus] = useState('Ímpar')
+
+    useEffect(function(){
+        setStatus(number % 2 === 0 ? 'Par' : 'Impar')
+    }, [number])
 
 
     return (
@@ -48,6 +57,14 @@ const UseEffect = (props) => {
             </div>
 
             <SectionTitle title="Exercício #02"/>
+            <div className="center">
+                <div>
+                    <span className="text">Status:</span>
+                    <span className="text red">{status}</span>
+                </div>
+            </div>
+
+            <SectionTitle title="Exercício #03"/>
             <div className="center">
                 <h1>I've rendered {count} times!</h1>
             </div>
